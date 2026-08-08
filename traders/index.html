@@ -39,7 +39,7 @@ const empty = document.getElementById('empty');
 
 function currencyBadge(currency){
   const isZombie=currency.toLowerCase().includes('zombie');
-  return `<span class="currency-badge ${isZombie?'currency-zombie':'currency-usd'}">${isZombie?'🧟':'💵'} ${currency}</span>`;
+  return `<span class="currency-badge ${isZombie?'currency-zombie':'currency-usd'}">${currency}</span>`;
 }
 
 function render(){
