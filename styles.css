@@ -30,6 +30,13 @@ input{flex:1;min-width:220px}
 .meta{color:var(--muted);font-size:.88rem}
 .chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
 .chip{border:1px solid #4b4540;color:#d8c4ad;background:#1d1815;padding:5px 8px;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}
+.currency-line,.card-currency{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.currency-line{margin:0 0 18px}
+.card-currency{margin-top:12px}
+.currency-label{color:#8f8a82;font-size:.67rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.currency-badge{display:inline-flex;align-items:center;gap:5px;border:1px solid;padding:5px 9px;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.currency-usd{color:#c9ddb9;background:#151d14;border-color:#40543b}
+.currency-zombie{color:#d5bfdf;background:#1d161f;border-color:#5a405f}
 .cta{display:inline-flex;margin-top:18px;color:#f0c7aa;font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.78rem}
 .profile{padding:48px 0 72px}
 .profile-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:36px;align-items:start}
@@ -39,7 +46,7 @@ input{flex:1;min-width:220px}
 .profile-top-gabi{grid-template-columns:minmax(0,1.18fr) minmax(300px,.82fr);gap:32px}
 .portrait-frame-gabi{aspect-ratio:4/4.35;max-height:575px}
 .portrait-gabi{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:center top;transform:scale(1.01)}
-.location{font-size:1.1rem;color:#d8c4ad;margin:10px 0 24px}
+.location{font-size:1.1rem;color:#d8c4ad;margin:10px 0 12px}
 .summary{color:var(--muted);line-height:1.7;font-size:1.02rem;max-width:700px}
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
 .panel{border:1px solid var(--line);background:var(--panel);padding:22px}
