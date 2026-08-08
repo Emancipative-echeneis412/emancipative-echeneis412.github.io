@@ -36,5 +36,6 @@ function currencyBadge(currency){const isZombie=currency.toLowerCase().includes(
 function render(){const q=search.value.trim().toLowerCase(),loc=locationFilter.value;const filtered=traders.filter(t=>{const hay=[t.name,t.title,t.location,t.region,t.currency,t.specialty,t.summary,...t.buys,...t.sells].join(' ').toLowerCase();return(!q||hay.includes(q))&&(!loc||t.location===loc)});grid.innerHTML=filtered.map(t=>`<a class="card" href="./${t.slug}/"><img src="../../${t.image}" alt="${t.name}, ${t.title}" onerror="this.style.display='none'"><div class="card-body"><div class="kicker">${t.title}</div><h2>${t.name}</h2><div class="meta">${t.location} • ${t.region}</div><div class="card-currency"><span class="currency-label">Currency</span>${currencyBadge(t.currency)}</div><div class="chips">${t.specialty.split('•').map(x=>`<span class="chip">${x.trim()}</span>`).join('')}</div><span class="cta">Open trader profile →</span></div></a>`).join('');empty.style.display=filtered.length?'none':'block'}
 search.addEventListener('input',render);locationFilter.addEventListener('change',render);render();
 </script>
+<script src="https://beneaththeashesdayz.github.io/site.js"></script>
 </body>
 </html>
