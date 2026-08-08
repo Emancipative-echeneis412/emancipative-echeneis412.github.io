@@ -6,21 +6,24 @@
     "location": "The Curator's Refuge",
     "region": "Mainland Chernarus",
     "currency": "USD",
-    "specialty": "Pok\u00e9mon \u2022 Collectables \u2022 Storage",
-    "summary": "Mainland collectables trader specializing in sealed Pok\u00e9mon boxes and collection storage solutions.",
+    "specialty": "Collectables \u2022 Pok\u00e9mon \u2022 Storage",
+    "summary": "A mainland collectables trader who buys rare finds and sealed Pok\u00e9mon collection boxes, while supplying storage solutions for collectors.",
     "buys": [
-      "Sealed Pok\u00e9mon booster boxes",
-      "Select collectables"
+      "Drippy sneakers",
+      "Fallout bobbleheads",
+      "Fallout Nuka Cola collectables",
+      "Paragon collectables",
+      "Vyse collectables",
+      "Sealed Pok\u00e9mon collection boxes"
     ],
     "sells": [
-      "Pok\u00e9mon card storage boxes",
       "Collectable storage solutions",
-      "Posters and display items",
-      "Fallout lunchboxes"
+      "Card albums and collection storage supplies"
     ],
     "notes": [
-      "Only sealed Pok\u00e9mon boxes are accepted for Pok\u00e9mon box sales.",
-      "Cinder Market may pay more for certain high-tier collectables."
+      "Gabi pays less than Cinder Market, but offers a convenient mainland option.",
+      "Cinder Market is the better choice when chasing maximum profit.",
+      "She does not buy individual trading cards."
     ],
     "image": "assets/traders/gabi.jpg"
   },
