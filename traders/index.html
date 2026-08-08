@@ -37,10 +37,15 @@ const empty = document.getElementById('empty');
   const o=document.createElement('option');o.value=loc;o.textContent=loc;locationFilter.appendChild(o);
 });
 
+function currencyBadge(currency){
+  const isZombie=currency.toLowerCase().includes('zombie');
+  return `<span class="currency-badge ${isZombie?'currency-zombie':'currency-usd'}">${isZombie?'🧟':'💵'} ${currency}</span>`;
+}
+
 function render(){
   const q=search.value.trim().toLowerCase(), loc=locationFilter.value;
   const filtered=traders.filter(t=>{
-    const hay=[t.name,t.title,t.location,t.region,t.specialty,t.summary,...t.buys,...t.sells].join(' ').toLowerCase();
+    const hay=[t.name,t.title,t.location,t.region,t.currency,t.specialty,t.summary,...t.buys,...t.sells].join(' ').toLowerCase();
     return (!q||hay.includes(q))&&(!loc||t.location===loc);
   });
   grid.innerHTML=filtered.map(t=>`
@@ -50,6 +55,7 @@ function render(){
         <div class="kicker">${t.title}</div>
         <h2>${t.name}</h2>
         <div class="meta">${t.location} • ${t.region}</div>
+        <div class="card-currency"><span class="currency-label">Currency</span>${currencyBadge(t.currency)}</div>
         <div class="chips">${t.specialty.split('•').map(x=>`<span class="chip">${x.trim()}</span>`).join('')}</div>
         <span class="cta">Open trader profile →</span>
       </div>
