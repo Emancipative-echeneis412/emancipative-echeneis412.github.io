@@ -1,2 +1,2 @@
-# beneaththeashesdayz-prog.github.io
+# beneaththeashesdayz.github.io
 Official website for Beneath the Ashes DayZ
